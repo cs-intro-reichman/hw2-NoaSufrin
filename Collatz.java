@@ -9,7 +9,11 @@ public class Collatz {
 			for (int i = 1; i <= N; i++) {
 				int steps = 1;
 				System.out.print(i + " ");
-	
+
+				if (i == 1) {
+					System.out.println("4 2 1 (4)");
+					continue;
+				}
 				int num = i;
 	
 				while (num != 1) {
